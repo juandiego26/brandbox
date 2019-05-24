@@ -1,0 +1,109 @@
+/*
+#  ·················
+#  ··_______________
+#  ·/·___/·___/·___/
+#  /·/__(__··|__··)·
+#  \___/____/____/··
+#  ·················
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+/* _______________Variables */
+
+:root {
+  --green-color: #7ACC2D;
+  --white-color: white;
+  --black-color: #313337;
+  /* Espaciado */
+  --space: 10px;
+  /* tipography*/
+  --normal: 12px;
+  /* box shadown */
+  --box: 0 0 2px 1px #e6e5e9;
+}
+/* ________________Variables*/
+
+html, body{
+  padding: 0px;
+  margin: 0px;
+  font-size: var(--normal);
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*-------------------- Navbar section*/
+
+nav {
+  display: flex;
+  background-color: var(--green-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between; /* separa los elementos del nav*/
+  align-items: center;
+}
+
+nav ul { /* todos los ul del nav*/
+  display: flex;
+}
+
+nav li { /*todos los li del nav*/
+  padding-right: 20px;
+  list-style: none; /* para quitar los puntos de la lista*/
+}
+
+nav li:last-child { /*el ultimo elemento de la lista*/
+  padding-right: 0px;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none; /*para quitar las linea de los botones*/
+}
+
+nav li a:hover {
+  color: var(--white-color);
+}
+
+/*--------------------Main section */
+
+.main_section {
+  padding: 15%;
+  text-align: center;
+}
+
+.products {
+  background-image: url('../images/curve.png'); /* no devolvemos una carpeta*/
+  max-height: 50px;
+  background-size: cover; /* Significa que ocupe el tamaño del div que se tiene*/
+  background-position: center top;
+  padding: 20%;
+  display: flex;
+}
+
+.product {
+  padding: var(--space);
+  margin-top: -240px;
+}
+
+.product .content {
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.img_content {
+  text-align: center;
+}
+
+.main_button {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: var(--normal);
+  color: var(--white-color);
+  border: 0;
+  cursor: pointer; /* para que salga la mano*/
+  border-radius: 2px;
+}
+
+.main_button:hover {
+  background-color: #5e9e22;
+}

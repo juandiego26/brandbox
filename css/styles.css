@@ -17,6 +17,7 @@
   --space: 10px;
   /* tipography*/
   --normal: 12px;
+  --font-footer: 13px;
   /* box shadown */
   --box: 0 0 2px 1px #e6e5e9;
 }
@@ -69,6 +70,8 @@ nav li a:hover {
   text-align: center;
 }
 
+/*___________ products*/
+
 .products {
   background-image: url('../images/curve.png'); /* no devolvemos una carpeta*/
   max-height: 50px;
@@ -106,4 +109,65 @@ nav li a:hover {
 
 .main_button:hover {
   background-color: #5e9e22;
+}
+
+/*___________ Beneficios*/
+.beneficios {
+  padding: 10%;
+  display: flex;
+}
+
+.beneficio {
+  text-align: center;
+  padding: 20px;
+}
+
+.beneficio img {
+  max-height: 100px;
+}
+
+.text-beneficio {
+  text-align: justify;
+}
+
+
+/*__________________ Menciones */
+.mentions {
+  display: flex;
+  padding: 5%;
+}
+
+.mention img {
+  width: 100%;
+}
+
+h2.mention-title {
+  text-align: center;
+}
+
+.mention {
+  padding: var(--space);
+}
+
+.content-mention {
+  box-shadow: var(--box);
+}
+
+.mention .text {
+  padding: var(--space);
+}
+
+/*_____________________ Footer*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--font-footer);
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+  padding: 20px;
+}
+
+.info a {
+  color: var(--green-color);
 }

@@ -1,5 +1,5 @@
 # A simple project with HTML, CSS and JavaScript
-1. The projects use CSS custom properties https://developer.mozilla.org/en-US/docs/Web/CSS/--*
+1. The projects use CSS custom properties <https://developer.mozilla.org/en-US/docs/Web/CSS/--*>
 
 ## Use
 1. The project applies **custom properties** that is the same **CSS variables** 

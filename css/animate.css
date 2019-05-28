@@ -8,12 +8,12 @@
  * Copyright (c) 2018 Daniel Eden
  */
  .fadeIn{
-  -webkit-animation-duration: 4s;
-  animation-duration: 4s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
+  -webkit-animation-duration: 4s; /* el tiempo de duración de nuestra animación compatibilidad  */
+  animation-duration: 4s; /* */
+  animation-fill-mode: both; /*se cumple la regla tanto de ida para regreso*/
+  -webkit-animation-fill-mode: both; 
   -webkit-animation-name: fadeIn;
-  animation-name: fadeIn;
+  animation-name: fadeIn; /*Nombre de la animación */
 }
 
 @keyframes fadeIn {

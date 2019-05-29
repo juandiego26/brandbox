@@ -23,12 +23,13 @@
 }
 /* ________________Variables*/
 
-html, body{
+html, body {
   padding: 0px;
-  margin: 0px;
+  margin: 0;
   font-size: var(--normal);
   font-family: 'Open Sans', sans-serif;
 }
+
 
 /*-------------------- Navbar section*/
 
@@ -39,7 +40,6 @@ nav {
   color: var(--white-color);
   justify-content: space-between; /* separa los elementos del nav*/
   align-items: center;
-  width: 100%; /* Establecer el ancho del nav en 100%*/
   box-shadow: 0 0 5px 1px #1b1919;
 }
 
@@ -69,7 +69,7 @@ nav li a:hover {
 /*--------------------Main section */
 
 .main_section {
-  padding: 15% 25%;
+  padding: 5% 25% 12% 25%;
   text-align: center;
 }
 
@@ -77,11 +77,12 @@ nav li a:hover {
 
 .products {
   background-image: url('../images/curve.png'); /* no devolvemos una carpeta*/
-  padding: 20%;
+  padding: 10% 20% 5% 20%;
   background-position: center top;
   background-repeat: no-repeat;
-  display: flex;
-  height: 95px;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 2rem;
   background-size: cover; /* Significa que ocupe el tamaño del div que se tiene*/
 }
 
@@ -148,10 +149,12 @@ nav li a:hover {
 
 h2.mention-title {
   text-align: center;
+  font-size: 2rem;
 }
 
 .mention {
   padding: var(--space);
+  width: 100%;
 }
 
 .content-mention {

@@ -25,43 +25,29 @@
     </div>
   </nav>
   <!-- /nav bar -->
-  <div class="container fadeIn">
-    <br>
-    <h2>Producto y descripción</h2>
-    <br>
-    <div class="row">
-      <div class="col-4">
-        <img src="images/ben1.png" alt="">
-      </div>
-      <div class="col-8">
-        <h3>Producto Genial</h3>
-        Miles de productos hay en el mercado, pero nada como una caja con gatitos.
-      </div>
+  <!-- Formulario Venta -->
+  <section class="venta-producto">
+    <div class="producto fadeInLeft">
+      <figure>
+          <img src="./images/box2.png" alt="" srcset="">
+      </figure>
+      <h2>Producto 1</h2>
+      <p>Miles de productos hay en el mercado, pero nada como una caja con gatitos</p>
     </div>
-    <div class="row">
-      <div class="col-4 no-desk">
-        <img src="images/ben2.png" alt="">
-      </div>
-      <div class="col-8">
-        <h3>Producto Impresionantes</h3>
-        Miles de productos hay en el mercado, pero nada como una caja con gatitos.
-      </div>
-      <div class="col-4 no-mobile">
-        <img src="images/ben2.png" alt="">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <img src="images/ben3.png" alt="">
-      </div>
-      <div class="col-8">
-        <h3>Producto Suavecito</h3>
-        Miles de productos hay en el mercado, pero nada como una caja con gatitos.
-      </div>
-    </div>
-  </div>
-    <!-- Empiezan beneficios -->
-    <!-- Inicio de footer -->
+    <form action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Q5PR9BWPVEN8S" method="POST" class="modulo-de-pago fadeInRight">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" value="" id="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" name="email" value="" id="email" required>
+
+      <label for="phone">Telefono</label>
+      <input type="number" name="phone">
+
+      <input type="submit" href="./exito.html" value="Confirmar Pago" class="form-buttom">
+    </form>
+  </section>
+  <!-- / Formulario Venta -->
   <!--Footer -->
   <footer>
     <div class="option">Terminos y condiciones</div>

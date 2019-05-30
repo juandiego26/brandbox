@@ -12,4 +12,8 @@
   .beneficios, .mentions {
     display: inherit;
   }
+  
+  .venta-producto {
+    grid-template-columns: 1fr;
+  }
 }

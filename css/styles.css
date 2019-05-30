@@ -13,10 +13,13 @@
   --green-color: #7ACC2D;
   --white-color: white;
   --black-color: #313337;
+  --gray-color: #c5c5c5;
   /* Espaciado */
   --space: 10px;
+  --extra-space: 2rem;
   /* tipography*/
   --normal: 12px;
+  --large: 1.4rem;
   --font-footer: 13px;
   /* box shadown */
   --box: 0 0 2px 1px #e6e5e9;
@@ -164,6 +167,74 @@ h2.mention-title {
 .mention .text {
   padding: var(--space);
 }
+
+/*_____________________ Venta*/
+.venta-producto {
+  min-height: calc(100vh - 9rem);
+  padding: var(--extra-space) 25%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-gap: var(--extra-space);
+  align-content: center;
+}
+
+.venta-producto .producto {
+  position: initial;
+  box-shadow: var(--box);
+  padding: 0 20px 20px 20px;
+}
+
+.venta-producto .modulo-de-pago {
+  box-shadow: var(--box);
+  padding: var(--space);
+  height: fit-content;
+}
+
+.modulo-de-pago label {
+  display: block;
+}
+      
+.modulo-de-pago input {
+  width: 100%;
+  height: 2.5em;
+  margin: .7em 0;
+  padding: .7em;
+  box-sizing: border-box;
+  font-size: var(--large);
+  border-radius: 3px;
+  border: 1px solid var(--gray-color);
+}
+
+.modulo-de-pago .form-buttom {
+  background-color: var(--green-color);
+  width: 100%;
+  padding: 10px;
+  font-size: var(--large);
+  color: var(--white-color);
+  border: none;
+  border-radius: 0.2rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.form-buttom:hover {
+  background-color: #5e9e22;
+}
+
+figure {
+  margin: 0px;
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
 
 /*_____________________ Footer*/
 footer {

@@ -1,0 +1,34 @@
+.faqs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+}
+
+.faqs_container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  height: auto;
+  flex-direction: column;
+}
+
+.faqs_container h1{
+  margin: calc(var(--space) * 6) 0 0 0;
+  font-size: calc(var(--large) * 2);
+}
+
+.faqs_QA h2{
+  font-size: var(--large);
+}
+
+.faqs_QA p{
+  font-size: var(--normal);
+}
+
+.faqs_QA{
+  margin: calc(var(--space) * 5) 0 calc(var(--space) * 5) 0;
+}

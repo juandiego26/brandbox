@@ -109,7 +109,7 @@ nav li a:hover {
   background-color: var(--green-color);
   width: 100%;
   padding: 10px;
-  font-size: var(--normal);
+  font-size: var(--large);
   color: var(--white-color);
   border: 0;
   cursor: pointer; /* para que salga la mano*/
